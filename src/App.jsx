@@ -22,7 +22,12 @@ function App() {
           count is {count}
         </button>
         <p className="edit-src">
-          Edit <code> <mark>src/App.jsx</mark></code> and save to test HMR
+          Edit{" "}
+          <code>
+            {" "}
+            <mark>src/App.jsx</mark>
+          </code>{" "}
+          and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
