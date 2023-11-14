@@ -38,5 +38,32 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #2dce48;
+  background-color: rgb(255, 47, 0);
+  font-size: 18px;
+  border-radius: 5px;
 }
+
+.read-the-docs:hover{
+  color: #002aff;
+  background-color: rgb(255, 0, 183);
+  font-size: 23px;
+}
+
+.edit-src{
+  color: #2dce48;
+  font-size: 34px;
+  border-radius: 5px;
+}
+
+.edit-src:hover{
+  background-color:blue;
+  padding: 6px;
+}
+
+mark{
+  color: rgb(255, 0, 0);
+  background-color: aqua;
+  border-radius: 5px;
+}
+
