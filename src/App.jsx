@@ -4,10 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  // TO increment my age
+  // TO increment my age using useState hook
   const [age, setAge] = useState(18);
-  const incAge = () => setAge(age + 1);
-  const decAge = () => setAge(age - 1);
+  const incAge = () => setAge(age + 1); //increase the age
+  const decAge = () => setAge(age - 1); //Decrease the age
 
   return (
     <>
@@ -27,9 +27,9 @@ function App() {
           My age is : <mark> {age} </mark>
         </h1>
         {/* Increment Age from 18 (initially) */}
-        <button onClick={incAge}> Increase Age</button>
+        <button onClick={incAge}> Increase Age (+)</button>
         {/* Decrease My Age from 18  */}
-        <button onClick={decAge}> Decrease Age</button>
+        <button onClick={decAge}> Decrease Age (-)</button>
       </div>
 
       <div className="card">
