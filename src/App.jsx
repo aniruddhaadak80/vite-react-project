@@ -4,7 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // TO increment my age
+  const [age, setAge] = useState(18);
+  const incAge = () => setAge(age + 1);
+  const decAge = () => setAge(age - 1);
 
   return (
     <>
@@ -16,11 +19,16 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + Ani🌹💜</h1>
+      {/*Changing  my age using react hooks (useState) */}
+      <h1>
+        My age is : <mark> {age} </mark>
+      </h1>
+      {/* Increment Age from 18 (initially) */}
+      <button onClick={incAge}> Increase</button>
+      {/* Decrease My Age from 18 */}
+      <button onClick={decAge}> Decrease</button>
+
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
         <p className="edit-src">
           Edit{" "}
           <code>
