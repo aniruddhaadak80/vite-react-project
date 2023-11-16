@@ -19,14 +19,18 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      {/*Changing  my age using react hooks (useState) */}
-      <h1>
-        My age is : <mark> {age} </mark>
-      </h1>
-      {/* Increment Age from 18 (initially) */}
-      <button onClick={incAge}> Increase</button>
-      {/* Decrease My Age from 18 */}
-      <button onClick={decAge}> Decrease</button>
+
+      {/* Div for my Age changing hook */}
+      <div className="age-div">
+        {/*Changing  my age using react hooks (useState) */}
+        <h1>
+          My age is : <mark> {age} </mark>
+        </h1>
+        {/* Increment Age from 18 (initially) */}
+        <button onClick={incAge}> Increase Age</button>
+        {/* Decrease My Age from 18  */}
+        <button onClick={decAge}> Decrease Age</button>
+      </div>
 
       <div className="card">
         <p className="edit-src">
