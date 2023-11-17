@@ -70,7 +70,7 @@ mark {
   margin: auto;
 }
 
-.age-div{
+.age-div {
   background-color: rgb(170, 14, 147);
   padding: 10px;
   border: 2px solid green;
@@ -78,7 +78,7 @@ mark {
   height: auto;
   width: auto;
 }
-.age-div:hover{
-background-color: black;
-border-color: azure;
+.age-div:hover {
+  background-color: black;
+  border-color: azure;
 }
