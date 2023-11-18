@@ -79,3 +79,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.game-div{
+  height: auto;
+  width: auto;
+  background-color: #22255f;
+  border: 3px dotted blue;
+  border-radius: 5px;
+
+}
+
+.game-div:hover{
+background-color:rgb(27, 62, 52);
+}
+
+.game{
+  height: auto;
+  width: auto;
+  background-color: rgb(95, 34, 95);
+  border: 3px solid rgb(0, 255, 34);
+  border-radius: 5px;
+}
+
+.game:hover{
+  background-color: rgb(70, 29, 51);
+}
