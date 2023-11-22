@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import HookCounterOne from "./useEffect.jsx";
 import Board from "./game.jsx";
+import Screen_Width from "./scrwidth.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -13,5 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
     {/* for  useEffect hooks  */}
     <HookCounterOne />
+    {/* To see window-screen width  */}
+    <Screen_Width />
   </React.StrictMode>
 );

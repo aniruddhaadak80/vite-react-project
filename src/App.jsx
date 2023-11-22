@@ -6,8 +6,17 @@ import "./App.css";
 function App() {
   // TO increment my age using useState hook
   const [age, setAge] = useState(18);
-  const incAge = () => setAge(age + 1); //increase the age
-  const decAge = () => setAge(age - 1); //Decrease the age
+  const incAge = () => setAge(age + 1); //***increase the age
+  const decAge = () => (age === 0 ? setAge(0) : setAge(age - 1)); //****Decrease the age using ternary operator
+
+  //? if-else statement for decrement the age and this will stop when 0 will occour
+  // const decAge = () => {
+  //   if(age === 0){
+  //     setAge(0);
+  //   }
+  //   else{
+  //   setAge(age - 1);
+  // }
 
   return (
     <>
@@ -26,10 +35,10 @@ function App() {
         <h1>
           My age is : <mark> {age} </mark>
         </h1>
-        {/* Increment Age from 18 (initially) */}
-        <button onClick={incAge}> Increase Age (+)</button>
         {/* Decrease My Age from 18  */}
         <button onClick={decAge}> Decrease Age (-)</button>
+        {/* Increment Age from 18 (initially) */}
+        <button onClick={incAge}> Increase Age (+)</button>
       </div>
 
       <div className="card">
